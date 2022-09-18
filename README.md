@@ -39,6 +39,16 @@ This contradicts our initial definition, that
 $X^\*$ is the lowest obtained sum value, as 
 $X^{'}$ would have a lower one ↯
 
+<h2>Example notebook</h2>	
+The optimizer.ipynb notebook shows an implementation of an example of the problem for 3 variables A, B, C. Two variables, A and C, should be minimized and B should be maximized.
+The implementation uses Pandas/numpy and with basic sorting operations.
+
+I tested it up to 20 000 000 different tuples and it ran in 30 seconds on my laptop (Intel I5 1035G4)
+
+Generally, we sort n+1 times. Each variable once and then the sum of the variables. Pandas uses numpys quicksort algorithm, which runs in 
+$O(m \* log(m))$, giving an overall runtime of 
+$O(n+1 \* (m \* log(m)))$ (sums and weightings are linear, which doesn't affect the overall runtime class)
+
 ---
 **_NOTE:_** I haven't done formal proofs in a while so if you have any suggestions/recommendations or critics, please feel free to text/correct it.
 
