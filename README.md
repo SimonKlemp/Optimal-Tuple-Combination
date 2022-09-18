@@ -22,12 +22,22 @@ Now, a general objective function which compares values of each tuple independen
 
 For an unweighted optimization, this solution is optimal: 
 
-Take the problem of optimizing $X = \{(x_1^1, x_2^1, .., x_n^1), ..., (x_1^m, x_2^m, .., x_n^m)\}$ with the objectives $o_1, ..., o_n$. 
+Take the problem of optimizing 
+$X = \{(x_1^1, x_2^1, .., x_n^1), ..., (x_1^m, x_2^m, .., x_n^m)\}$ with the objectives
+$o_1, ..., o_n$. 
 
-Take the solution we obtained by applying the procedure formulated above and denote this solution with $X^* = (x_1^*, x_2^*, .., x_n^*)$.<br> 
-Consider the case where the solution we obtained is not optimal, which means there is an $X^{'}$ for which holds for at least one $o_i$: $o_i(x_i^{'}) > o_i(x_i^{*})$, where ">" refers to a better value w.r.t the optimal function (e.g. a bigger maximum). Then, in our case, the transformed ranks would also correspond to this, meaning the rank of $x_i^{'}$ is by definition lower than $x_i^{*}$. 
+Take the solution we obtained by applying the procedure formulated above and denote this solution with 
+$X^* = (x_1^*, x_2^*, .., x_n^*)$.<br> 
+Consider the case where the solution we obtained is not optimal, which means there is an 
+$X^{'}$ for which holds for at least one 
+$o_i$: 
+$o_i(x_i^{'}) > o_i(x_i^{*})$, where ">" refers to a better value w.r.t the optimal function (e.g. a bigger maximum). Then, in our case, the transformed ranks would also correspond to this, meaning the rank of 
+$x_i^{'}$ is by definition lower than 
+$x_i^{*}$. 
 
-This contradicts our initial definition, that $X^*$ is the lowest obtained sum value, as $X^{'}$ would have a lower one ↯
+This contradicts our initial definition, that
+$X^*$ is the lowest obtained sum value, as 
+$X^{'}$ would have a lower one ↯
 
 ---
 **_NOTE:_** I haven't done formal proofs in a while so if you have any suggestions/recommendations or critics, please feel free to text/correct it.
