@@ -27,7 +27,7 @@ $X = \{(x_1^1, x_2^1, .., x_n^1), ..., (x_1^m, x_2^m, .., x_n^m)\}$ with the obj
 $o_1, ..., o_n$. 
 
 Take the solution we obtained by applying the procedure formulated above and denote this solution with 
-$X^* = (x_1^*, x_2^*, .., x_n^*)$.<br> 
+$X^* = (x_1^{*}, x_2^{*}, .., x_n^{*})$.<br> 
 Consider the case where the solution we obtained is not optimal, which means there is an 
 $X^{'}$ for which holds for at least one 
 $o_i$: 
