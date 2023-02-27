@@ -31,7 +31,7 @@ $X^{\*} = (x_1^{\*}, x_2^{\*}, .., x_n^{\*})$.<br>
 Consider the case where the solution we obtained is not optimal, which means there is an 
 $X^{'}$ for which holds for at least one 
 $o_i$: 
-$o_i(x_i^{'}) > o_i(x_i^{\*})$, where ">" refers to a better value w.r.t the optimal function (e.g. a bigger maximum). Then, in our case, the transformed ranks would also correspond to this, meaning the rank of 
+$o_i(x_i^{'}) > o_i(x_i^{\*})$, where ">" refers to a better value w.r.t the optimal function (e.g. a bigger maximum). Then, in our case, the transformed ranks would correspond to this, meaning the rank of 
 $x_i^{'}$ is by definition lower than 
 $x_i^{\*}$. 
 
@@ -48,8 +48,3 @@ I tested it up to 20 000 000 different tuples and it ran in 30 seconds on my lap
 Generally, we sort n+1 times. Each variable once and then the sum of the variables. Pandas uses numpys quicksort algorithm, which runs in 
 $O(m \* log(m))$, giving an overall runtime of 
 $O(n+1 \* (m \* log(m)))$ (sums and weightings are linear, which doesn't affect the overall runtime class)
-
----
-**_NOTE:_** I haven't done formal proofs in a while so if you have any suggestions/recommendations or critics, please feel free to text/correct it.
-
----
